@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>News feed</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body {
+            font-family: Arial;
+        }
+        .topnav {
+            overflow: hidden;
+            background-color: #333;
+            position: relative;
+        }
+        .topnav #myLinks {
+            display: none;
+        }
+        .topnav a {
+            color: white;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+            display: block;
+        }
+        .topnav a.icon {
+            background: black;
+            display: block;
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+        .topnav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .active {
+            background-color: #04AA6D;
+            color: white;
+        }
+
+
+        .image {
+            width: 100%;
+            display: grid;
+            row-gap: 5px;
+            grid-column-gap: 5px;
+            grid-template-columns: 3fr 3fr 3fr;
+            grid-template-rows: auto;
+            background-color: #f6f6f9;
+            padding: 10px;
+        }
+
+        img {
+            background-color: rgb(255, 255, 255);
+            border: 1px rgb(247, 247, 247);
+            padding: 20px;
+            height: 260px;
+            width: 580px;
+            object-fit: cover;
+            max-width: 100%;
+            margin: auto;
+        }
+        
+    </style>
+</head>
+
+<body>
+
+
+    <div class="container">
+
+
+        <div class="topnav">
+            <a class="active">News Feed</a>
+            <div id="myLinks">
+                <a href="https://news.google.com/home?hl=en-IN&gl=IN&ceid=IN:en">Google News</a>
+                <a href="https://www.gujaratsamachar.com/">Gujarat Samachar</a>
+                <a href="https://sandesh.com/world">Sandesh News</a>
+                <a href="https://www.abplive.com/">ABP News</a>
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+
+        <div>
+            <h2>GET THE INDIA'S LATEST NEWS</h2>
+            </section>
+            <div class="image">
+                <div>
+                    <img src="https://th-i.thgim.com/public/incoming/5a2fzu/article68888573.ece/alternates/LANDSCAPE_1200/CPR.jpg"
+                        alt="Image 1">
+                    <a
+                        href="https://www.thehindu.com/elections/maharashtra-assembly/voting-for-single-phase-maharashtra-assembly-elections-on-november-20-2024/article68888546.ece">Voting
+                        for single-phase Maharashtra assembly election begins</a>
+                </div>
+
+                <div>
+                    <img src="https://www.hindustantimes.com/ht-img/img/2024/11/20/550x309/Women-walk-on-a-road-near-India-Gate-as-the-sky-is_1732075338738_1732075350030.jpg"
+                        alt="Image 2">
+                    <a
+                        href="https://www.hindustantimes.com/india-news/50-delhi-government-employees-to-work-from-home-due-to-air-pollution-announces-gopal-rai-101732074529213.html">work
+                        from home due to air pollution, announces Gopal Rai</a>
+                </div>
+
+                <div>
+                    <img src="https://c.ndtvimg.com/2024-11/end35fmg_supriya-sule_625x300_20_November_24.jpg?im=FeatureCrop,algorithm=dnn,width=650,height=400"
+                        alt="Image 3">
+                    <a
+                        href="https://www.ndtv.com/india-news/2024-maharashtra-election-ajit-pawar-supriya-sule-ajit-pawar-says-supriya-sules-voice-on-viral-bitcoin-clip-she-responds-7060738">"Rama
+                        Krishna Hari": Supriya Sule On Cousin Ajit Pawar's Bitcoin Row Remark</a>
+                </div>
+
+                <div>
+                    <img src="https://static.toiimg.com/thumb/imgsize-1781214,msid-115464866,width-400,resizemode-4/115464866.jpg"
+                        alt="Image 4">
+                    <a
+                        href="https://timesofindia.indiatimes.com/india/maharashtra-assembly-election-2024-live-updates-exit-poll-results-today-opinion-polls-india-elections-voting-exit-polls-20-november-2024/liveblog/115464866.cms">Maharashtra
+                        Election 2024 Live Updates: 32.18% voter turnout recorded till 1pm</a>
+                </div>
+
+                <div>
+                    <img src="https://th-i.thgim.com/public/news/national/obmrjh/article68884986.ece/alternates/LANDSCAPE_1200/delhi%20bjp%20distribute%20masks.jpeg"
+                        alt="Image 5">
+                    <a
+                        href="https://www.thehindu.com/news/cities/Delhi/delhi-ncr-air-quality-pollution-aqi-smog-visibility-live-updates-nov-19-2024/article68884795.ece">Delhi
+                        air pollution highlights: AQI at 471; Environment Minister says call on odd-even measures to be
+                        taken soon</a>
+                </div>
+
+                <div>
+                    <img src="https://th-i.thgim.com/public/incoming/83jc02/article68867336.ece/alternates/LANDSCAPE_1200/20241107354L.jpg"
+                        alt="Image 6">
+                    <a
+                        href="https://www.thehindu.com/news/national/kerala/wayanad-bypoll-priyanka-gandhis-5-lakh-victory-target-faces-test-after-low-voter-turnout/article68867327.ece?cx_testId=81&cx_testVariant=cx_1&cx_artPos=1&cx_experienceId=EXPO56ZDYSGX&cx_experienceActionId=showRecommendations7EV8PP8TM51R64#cxrecs_s">Wayanad
+                        bypoll: Priyanka Gandhi’s 5-lakh victory target faces test after low voter turnout</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myLinks");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
+    </script>
+
+</body>
+
+</html>
